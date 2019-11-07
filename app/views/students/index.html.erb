@@ -5,9 +5,7 @@
   <% end %>
 </div>
 
-<div><%= link_to "student/:id", "/student/#{student.id}" %></div>
+
 <div><%= link_to student.first_name + " " + student.last_name, student_path(student) %></div>
 
 
-<div><a href='<%= "/posts/#{post.id}" %>'><%= post.title %></a></div>
-<div><%= link_to post.title, post_path(post) %></div>
