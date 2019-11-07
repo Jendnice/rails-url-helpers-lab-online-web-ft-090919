@@ -1,5 +1,7 @@
 class AddDefaultValue < ActiveRecord::Migration 
 
   def up
-    change_column :profiles, :show_attribute, :boolean, default: true
+    add_column :students, :active, :boolean, default: false
   end
+  
+end 
