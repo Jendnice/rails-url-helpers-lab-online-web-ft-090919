@@ -19,6 +19,8 @@ class StudentsController < ApplicationController
     end 
     @student.active 
     @student.save
+    
+    redirect_to 
   end 
 
   private
