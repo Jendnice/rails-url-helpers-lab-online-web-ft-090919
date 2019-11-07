@@ -9,3 +9,5 @@
 
 
   <div><%= link_to post.title, post_path(post) %></div>
+  <div><a href='<%= "/posts/#{post.id}" %>'><%= post.title %></a></div>
+<% end %>
