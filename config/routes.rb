@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   
   resources :students 
   
-  get '/students/:id/activate', to: 'students#activate(:id)'
+  get '/students/:id/activate', to: 'students#activate'
   
 end
