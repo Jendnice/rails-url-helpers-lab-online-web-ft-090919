@@ -14,6 +14,10 @@ class StudentsController < ApplicationController
     
     if @student.active 
       @student.active = false 
+    else 
+      @student.active = true 
+    end 
+    
     activate_student_path(@student)
     redirect to show 
   end 
