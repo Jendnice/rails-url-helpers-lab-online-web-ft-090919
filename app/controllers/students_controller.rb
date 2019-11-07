@@ -10,7 +10,6 @@ class StudentsController < ApplicationController
   end
   
   def activate
-    binding.pry 
     @student = Student.find(params[:id])
     activate_student_path(@student)
     redirect to show 
