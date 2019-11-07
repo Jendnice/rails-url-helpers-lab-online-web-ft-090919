@@ -20,7 +20,7 @@ class StudentsController < ApplicationController
     @student.active 
     @student.save
     
-    redirect_to 
+    redirect_to show
   end 
 
   private
