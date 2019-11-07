@@ -15,7 +15,12 @@ class StudentsController < ApplicationController
   end 
   
   def activate_student_path(student)
-    
+    if student.active == false 
+      student.active = true 
+    elsif student.active == true 
+      student.active = false 
+    end 
+    student.save 
   end 
 
   private
